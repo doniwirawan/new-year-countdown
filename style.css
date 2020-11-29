@@ -61,6 +61,43 @@ h1{
 .time h2{
 	margin: 0 0 5px;
 }
+.btn-container{
+	display: flex;
+	margin-top: 190px;
+}
+.button,.button2{
+			/*margin-top: 270px;*/
+			margin: 10px;
+			outline: none;
+			border: none;
+			padding: 10px;
+			border-radius: 20px;
+			background: none;
+			color: white;
+			border: 1px solid white;
+
+
+		}
+		.button:hover,.button2:hover{
+			color:black;
+			/* background: none; */
+			background: white;
+			border: 1px solid white;
+		}
+		.quote-area{
+			position: fixed;
+			text-align: center;
+			z-index: 999999;
+			color: white;
+			box-sizing: border-box;
+			left: 50%;
+			transform: translateX(-50%);
+			margin-top: 110px;
+			font-family: 'Lato','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			letter-spacing: 1px;
+		}
+
+
 @media (max-width: 500px){
 	h1{
 		font-size: 45px;
@@ -75,4 +112,35 @@ h1{
 	.time small{
 		font-size: 10px;
 	}
+	.btn-container{
+	display: flex;
+	margin-top: 190px;
+}
+	.button,.button2{
+			/*margin-top: 440px;*/
+			outline: none;
+			border: none;
+			padding: 10px;
+			border-radius: 20px;
+			color: white;
+			border: 1px solid white;
+			}
+			.button:hover,.button2:hover{
+				color:black !important;
+			/* background: none; */
+			background: white;
+			border: 1px solid white;
+			}
+			.quote-area{
+			position: fixed;
+			text-align: center;
+			z-index: 999999;
+			color: white;
+			box-sizing: border-box;
+			left: 50%;
+			transform: translateX(-50%);
+			margin-top: 10px;
+			font-family: 'Lato','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			letter-spacing: 1px;
+			}
 }
