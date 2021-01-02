@@ -189,4 +189,13 @@ h1 {
 		left: 50%;
 		transform: translateX(-50%);
 	}
+
+	.time {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 5px;
+		font-size: 2vw;
+	}
 }
