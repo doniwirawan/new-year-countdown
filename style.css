@@ -1,10 +1,11 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
 	background: url('./img/background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -17,27 +18,32 @@ body{
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	margin:0;
+	margin: 0;
 	overflow: hidden;
 }
+
 /*add a dark overlay*/
-body::after{
+body::after {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 }
-body *{
+
+body * {
 	z-index: 1;
 }
-h1{
+
+h1 {
 	font-size: 60px;
 	margin: -80px 0 40px;
+	display: none;
 }
-.year{
+
+.year {
 	font-size: 200px;
 	z-index: -1;
 	opacity: 0.2;
@@ -46,101 +52,154 @@ h1{
 	left: 50%;
 	transform: translateX(-50%);
 }
-.countdown{
+
+.countdown {
 	/*display: flex;*/
 	display: none;
 	transform: scale(2);
 }
-.time{
+
+.time {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin:15px;
+	margin: 15px;
 }
-.time h2{
+
+.time h2 {
 	margin: 0 0 5px;
 }
-.btn-container{
-	display: flex;
+
+.btn-container {
+	display: none;
 	margin-top: 190px;
 }
-.button,.button2{
-			/*margin-top: 270px;*/
-			margin: 10px;
-			outline: none;
-			border: none;
-			padding: 10px;
-			border-radius: 20px;
-			background: none;
-			color: white;
-			border: 1px solid white;
+
+.button,
+.button2 {
+	/*margin-top: 270px;*/
+	margin: 10px;
+	outline: none;
+	border: none;
+	padding: 10px;
+	border-radius: 20px;
+	background: none;
+	color: white;
+	border: 1px solid white;
 
 
-		}
-		.button:hover,.button2:hover{
-			color:black;
-			/* background: none; */
-			background: white;
-			border: 1px solid white;
-		}
-		.quote-area{
-			position: fixed;
-			text-align: center;
-			z-index: 999999;
-			color: white;
-			box-sizing: border-box;
-			left: 50%;
-			transform: translateX(-50%);
-			margin-top: 110px;
-			font-family: 'Lato','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-			letter-spacing: 1px;
-		}
+}
+
+.button:hover,
+.button2:hover {
+	color: black;
+	/* background: none; */
+	background: white;
+	border: 1px solid white;
+}
+
+.quote-area {
+	position: fixed;
+	text-align: center;
+	z-index: 999999;
+	color: white;
+	box-sizing: border-box;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 110px;
+	font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	letter-spacing: 1px;
+}
+
+.year {
+	display: none;
+}
 
 
-@media (max-width: 500px){
-	h1{
-		font-size: 45px;
+@media (max-width: 500px) {
+	h1 {
+		font-size: 2em;
+		margin-top: -370px;
 	}
-	.time{
-		margin-top: 5px;
+
+	.countdown {
+		display: flex;
+		flex-direction: column;
+		font-size: 1em;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		margin-top: 50px;
 	}
-	.time h2{
+
+	.time {
+		margin-top: 1px;
+	}
+
+	.time h2 {
 		font-size: 12px;
-		margin:0;
+		margin: 0;
 	}
-	.time small{
+
+	.time small {
 		font-size: 10px;
 	}
-	.btn-container{
-	display: flex;
-	margin-top: 190px;
-}
-	.button,.button2{
-			/*margin-top: 440px;*/
-			outline: none;
-			border: none;
-			padding: 10px;
-			border-radius: 20px;
-			color: white;
-			border: 1px solid white;
-			}
-			.button:hover,.button2:hover{
-				color:black !important;
-			/* background: none; */
-			background: white;
-			border: 1px solid white;
-			}
-			.quote-area{
-			position: fixed;
-			text-align: center;
-			z-index: 999999;
-			color: white;
-			box-sizing: border-box;
-			left: 50%;
-			transform: translateX(-50%);
-			margin-top: 10px;
-			font-family: 'Lato','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-			letter-spacing: 1px;
-			}
+
+	.btn-container {
+		position: absolute;
+		display: flex;
+		margin-top: 410px;
+	}
+
+	.button,
+	.button2 {
+		/*margin-top: 440px;*/
+		outline: none;
+		border: none;
+		padding: 10px;
+		border-radius: 20px;
+		color: white;
+		border: 1px solid white;
+	}
+
+	.button:hover,
+	.button2:hover {
+		color: black !important;
+		/* background: none; */
+		background: white;
+		border: 1px solid white;
+	}
+
+	.quote-area {
+		position: fixed;
+		text-align: center;
+		z-index: 999999;
+		color: white;
+		box-sizing: border-box;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-top: 10px;
+		font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		letter-spacing: 1px;
+	}
+
+	.year {
+		font-size: 8em;
+		position: absolute;
+		top: -0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	body::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 }
