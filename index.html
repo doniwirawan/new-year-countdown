@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Description" content="Website untuk mengetahui seberapa lama tahun baru" />
+	<!-- Mendeklarasikan warna yang muncul pada address bar Chrome versi seluler -->
+	<meta name="theme-color" content="#414f57" />
+	<!-- Mendeklarasikan ikon untuk iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+	<meta name="apple-mobile-web-app-title" content="Nama Situs" />
+	<link rel="apple-touch-icon" href="path/to/icons/128x128.png" />
+	<!-- Mendeklarasikan ikon untuk Windows -->
+	<meta name="msapplication-TileImage" content="path/to/icons/128x128.png" />
+	<meta name="msapplication-TileColor" content="#000000" />
+	<link rel="stylesheet" href="manifest.json">
 	<title>New Year Countdown</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<div id="year" class="year"></div>
-	<h1 id="h1">New Year Countdown</h1>	
+	<h1 id="h1">New Year Countdown</h1>
 
 	<div id="countdown" class="countdown">
 		<div class="time">
@@ -40,5 +54,15 @@
 
 
 	<script src="script.js"></script>
+	<script src="sw.js"></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('/sw.js');
+			});
+		}
+	</script>
+	
 </body>
-</html>   
+
+</html>
