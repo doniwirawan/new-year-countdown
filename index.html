@@ -5,16 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="Description" content="Website untuk mengetahui seberapa lama tahun baru" />
-	<!-- Mendeklarasikan warna yang muncul pada address bar Chrome versi seluler -->
-	<meta name="theme-color" content="#414f57" />
-	<!-- Mendeklarasikan ikon untuk iOS -->
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
-	<meta name="apple-mobile-web-app-title" content="Nama Situs" />
-	<link rel="apple-touch-icon" href="path/to/icons/128x128.png" />
-	<!-- Mendeklarasikan ikon untuk Windows -->
-	<meta name="msapplication-TileImage" content="path/to/icons/128x128.png" />
-	<meta name="msapplication-TileColor" content="#000000" />
+	 <!-- Mendeklarasikan warna yang muncul pada address bar Chrome versi seluler -->
+     <meta name="theme-color" content="#414f57" />
+     <!-- Mendeklarasikan ikon untuk iOS -->
+     <meta name="apple-mobile-web-app-capable" content="yes" />
+     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+     <meta name="apple-mobile-web-app-title" content="Expense Tracker" />
+     <link rel="apple-touch-icon" href="favicon.ico" />
+     <!-- Mendeklarasikan ikon untuk Windows -->
+     <meta name="msapplication-TileImage" content="favicon.ico" />
+     <meta name="msapplication-TileColor" content="#000000" />
 	<link rel="stylesheet" href="manifest.json">
 	<title>New Year Countdown</title>
 	<link rel="stylesheet" href="style.css">
@@ -53,8 +53,6 @@
 	<img src="./img/spinner.gif" alt="loading..." id="loading" class="loading">
 
 
-	<script src="script.js"></script>
-	<script src="sw.js"></script>
 	<script>
 		if ('serviceWorker' in navigator) {
 			window.addEventListener('load', () => {
@@ -62,6 +60,9 @@
 			});
 		}
 	</script>
+	<script src="sw.js"></script>
+	<script src="script.js"></script>
+	
 	
 </body>
 

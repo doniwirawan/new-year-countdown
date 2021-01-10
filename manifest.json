@@ -10,11 +10,15 @@
  "display": "standalone",
  "orientation": "portrait-primary",
  "icons": [{
-   "src": "path/to/icons/72x72.png",
+   "src": "favicon.ico",
    "sizes": "72x72",
    "type": "image/png"
+  },{
+   "src": "favicon.ico",
+   "sizes": "48x48",
+   "type": "image/png"
   }, {
-   "src": "path/to/icons/512x512.png",
+   "src": "favicon.ico",
    "sizes": "512x512",
    "type": "image/png"
   }]
