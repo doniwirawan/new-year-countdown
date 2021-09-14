@@ -13,7 +13,7 @@ body {
 	height: 100vh;
 	max-height: 100vh;
 	color: #fff;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -117,7 +117,7 @@ h1 {
 	bottom: 25%;
 	transform: translateX(-50%);
 	margin-top: 110px;
-	font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	letter-spacing: 1px;
 }
 
@@ -176,7 +176,7 @@ h1 {
 		bottom: 21%;
 		transform: translateX(-50%);
 		margin-top: 110px;
-		font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 		letter-spacing: 1px;
 	}
 
